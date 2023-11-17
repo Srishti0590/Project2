@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as *;
+
+.cart-item {
+  &:nth-child(1) {
+    border-top: 0.0625rem solid #ced4da;
+  }
+
+  font-weight: 500;
+  font-size: 1.125rem;
+
+  border-bottom: 0.0625rem solid #ced4da;
+
+  .cart-img {
+    width: 20%;
+  }
+
+  .category {
+    color: $black-tint-6;
+    font-weight: 600;
+  }
+
+  .cross {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}

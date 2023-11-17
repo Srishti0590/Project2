@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *;
+
+.product-card {
+  box-shadow: 0 0.5rem 0.5rem rgba($black, 0.1);
+  border-radius: 0.5rem;
+  transition: all 0.35s;
+
+  img {
+    aspect-ratio: 272/389;
+  }
+
+  &:hover {
+    transform: translateY(-0.625rem);
+  }
+
+  .product-info {
+    border-top: 0.0625rem solid $primary-tint-5;
+
+    .product-price {
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+
+    .product-title {
+      a {
+        font-size: 1.125rem;
+        font-weight: 500;
+        transition: all 0.25s;
+
+        &:hover,
+        &:active {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .new-tag {
+    font-size: 0.875rem;
+    background-color: $primary-tint-2;
+    border-radius: 10rem;
+    line-height: 1;
+    color: $white;
+    right: 0.75rem;
+  }
+}

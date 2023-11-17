@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+
+.cart {
+  cursor: pointer;
+
+  &-icon {
+    width: 2.625rem;
+    height: 2.625rem;
+
+    path {
+      fill: $black-tint-5;
+    }
+  }
+
+  &-item-count {
+    color: $white;
+    line-height: 0;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    top: -1rem;
+    right: -1rem;
+
+    border-radius: 50%;
+    background-color: $primary-tint-1;
+  }
+}

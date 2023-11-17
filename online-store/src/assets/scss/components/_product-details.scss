@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+
+.product-details {
+  font-size: 1.25rem;
+
+  .category,
+  .description {
+    font-weight: 500;
+  }
+
+  .price {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: $primary-color;
+  }
+}

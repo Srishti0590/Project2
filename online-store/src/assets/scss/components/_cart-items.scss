@@ -1,0 +1,12 @@
+.no-items-msg {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  transform: translateY(10rem);
+}
+
+@media (max-width: 78em) {
+  .cart-container {
+    width: 100% !important;
+  }
+}

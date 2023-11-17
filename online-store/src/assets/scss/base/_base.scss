@@ -1,0 +1,72 @@
+@use "../abstracts/variables" as *;
+
+.heading {
+  &-primary {
+    font-size: 3rem;
+    font-weight: 600;
+    color: $primary-color;
+    letter-spacing: -0.0469rem;
+  }
+
+  &-secondary {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: $black-tint-5;
+  }
+}
+
+.btn {
+  transition: all 0.35s;
+  border: none;
+
+  &-pill {
+    border-radius: 10rem;
+  }
+
+  &-primary {
+    background-color: $primary-color;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+      background-color: $primary-tint-2;
+    }
+  }
+
+  &-secondary {
+    background-color: $secondary-color;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+      background-color: $secondary-tint-2;
+    }
+  }
+}
+
+.bottom-2 {
+  bottom: 2%;
+}
+
+.star {
+  width: 1rem;
+  height: 1rem;
+
+  path {
+    fill: $primary-tint-1;
+  }
+}
+
+.user-message {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  transform: translateY(6rem);
+}
+
+.footer {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
